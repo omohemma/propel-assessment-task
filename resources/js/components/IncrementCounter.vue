@@ -1,15 +1,14 @@
 <template>
-    <button
-        type="button"
-        @click="counter++"
-        class="p-2 text-white bg-gray-500 rounded"
-    >
-        Counter is: {{ counter }}
-    </button>
+    <div>
+        <Button size="small" @click="counter++" label="Submit"/>
+        <p> Counter is: {{ counter }}</p>
+    </div>
+
 </template>
 
 <script setup>
 import {ref} from 'vue'
+import Button from 'primevue/button';
 
 const counter = ref(0)
 </script>
