@@ -140,6 +140,74 @@
                             </Button>
                         </template>
                     </ProfileSectionHeader>
+
+                    <div class="mt-3">
+                        <Card v-for="(n, index) in 3" :pt="{
+                            content: { class: 'p-0 pt-1 ' },
+                            footer: { class: 'pt-3' },
+                            }"
+                              @mouseenter="hoverOnWorkExperienceCard(index)"
+                              @mouseleave="hoverOnWorkExperienceCard(index)"
+                              class="hover:bg-blue-100 hover:cursor-auto mb-3"
+                        >
+                            <template #title>
+                                <div class="flex align-items-center justify-content-between h-2rem">
+                                    <h4 class="my-1 text-lg text-black-alpha-90">Senior Software Engineer, Growth</h4>
+                                    <div v-show="hover[index]">
+                                        <Button size="small" class="bg-white mr-2 p-1" rounded>
+                                            <template #icon>
+                                                <Icon icon="fluent:edit-24-regular" color="blue" width="20"
+                                                      height="20"/>
+                                            </template>
+                                        </Button>
+
+                                        <Button size="small" class="bg-white p-1" rounded>
+                                            <template #icon>
+                                                <Icon icon="fluent:delete-24-regular" color="red" width="20"
+                                                      height="20"/>
+                                            </template>
+                                        </Button>
+
+
+                                    </div>
+                                </div>
+
+                            </template>
+                            <template #subtitle>
+                                <div class="flex align-items-center">
+                                    <a href="" class="text-black-alpha-90">Speedaf Nigeria</a>
+                                    <Divider class="py-2 px-0 m-1" layout="vertical"/>
+                                    <span>Lagos, Nigeria</span>
+                                    <Divider class="py-2 px-0 m-1" layout="vertical"/>
+                                    <span>jan 2021 – Present</span>
+                                </div>
+                            </template>
+                            <template #content>
+                                <ul>
+                                    <li class="mb-3">Extracted, analyzed, and interpreted data on key metrics, into
+                                        meaningful and
+                                        actional information using MS Excel, R and SQL to be proactive and give insight
+                                        into nationwide stations backlogs, efficiency and overall business performance.
+                                    </li>
+                                    <li class="mb-3">Collaborated with various stakeholders to develop and implement
+                                        various KPIs and
+                                        SLAs to improve overall business performance.
+                                    </li>
+                                    <li class="mb-3">Extracted, analyzed, and interpreted data on key metrics, into
+                                        meaningful and
+                                        actional information using MS Excel, R and SQL to be proactive and give insight
+                                        into nationwide stations backlogs, efficiency and overall business performance.
+                                    </li>
+                                    <li class="mb-3">Collaborated with various stakeholders to develop and implement
+                                        various KPIs and
+                                        SLAs to improve overall business performance.
+                                    </li>
+                                </ul>
+                            </template>
+                        </Card>
+
+
+                    </div>
                 </section>
 
                 <!-- Education -->
@@ -153,6 +221,62 @@
                             </Button>
                         </template>
                     </ProfileSectionHeader>
+
+                    <div class="mt-3">
+                        <Card v-for="(n, index) in 2" :pt="{
+                            content: { class: 'p-0 pt-1 ' },
+                            footer: { class: 'pt-3' },
+                            }"
+                              @mouseenter="hoverOnWorkExperienceCard(index)"
+                              @mouseleave="hoverOnWorkExperienceCard(index)"
+                              class="hover:bg-blue-100 hover:cursor-auto mb-3"
+                        >
+                            <template #title>
+                                <div class="flex align-items-center justify-content-between h-2rem">
+                                    <h4 class="my-1 text-lg text-black-alpha-90">Msc. Statistics (Computational
+                                        Statistics)</h4>
+                                    <div v-show="hover[index]">
+                                        <Button size="small" class="bg-white mr-2 p-1" rounded>
+                                            <template #icon>
+                                                <Icon icon="fluent:edit-24-regular" color="blue" width="20"
+                                                      height="20"/>
+                                            </template>
+                                        </Button>
+
+                                        <Button size="small" class="bg-white p-1" rounded>
+                                            <template #icon>
+                                                <Icon icon="fluent:delete-24-regular" color="red" width="20"
+                                                      height="20"/>
+                                            </template>
+                                        </Button>
+
+
+                                    </div>
+                                </div>
+
+                            </template>
+                            <template #subtitle>
+                                <div class="flex align-items-center">
+                                    <span>University of Ibadan</span>
+                                    <Divider class="py-2 px-0 m-1" layout="vertical"/>
+                                    <span>Oyo, Nigeria</span>
+                                    <Divider class="py-2 px-0 m-1" layout="vertical"/>
+                                    <span>jan 2021 – Present</span>
+                                </div>
+                            </template>
+                            <template #content>
+                                <ul>
+                                    <li class="mb-3">Country rep, World Statistics Olympiad, Oregon, United States
+                                    </li>
+                                    <li class="mb-3">Graduating thesis got published in The Sun
+                                    </li>
+
+                                </ul>
+                            </template>
+                        </Card>
+
+
+                    </div>
                 </section>
 
                 <!-- Skills -->
@@ -215,145 +339,22 @@
                     </ProfileSectionHeader>
 
                     <div class="grid mt-3">
-                        <div class="md:col-6 col-12">
+                        <div v-for="n in 6" class="md:col-6 col-12">
                             <Card
                                 :pt="{
                             content: { class: 'p-0 pt-1 ' },
                             footer: { class: 'pt-3' },
                             }"
+                                class="border-round-lg"
 
                             >
                                 <template #header>
-                                </template>
-                                <template #title>
-                                    <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
-                                        dashboard </h4>
-                                </template>
-                                <template #content>
-                                    <p class="m-0 text-sm">
-                                        Elevating e-commerce with seamless checkout redesign for enhanced user
-                                        experience
-                                    </p>
-                                </template>
-                                <template #footer>
-                                    <Button class="p-0 text-blue-600 text-sm" link label="View project"/>
-                                </template>
-                            </Card>
-                        </div>
+                                    <div class="w-full border-round-3xl ">
+                                        <img src="https://placehold.co/600x400" alt="Image"
+                                        />
+                                    </div>
 
-                        <div class="md:col-6 col-12">
-                            <Card
-                                :pt="{
-                            content: { class: 'p-0 pt-1 ' },
-                            footer: { class: 'pt-3' },
-                            }"
 
-                            >
-                                <template #header>
-                                </template>
-                                <template #title>
-                                    <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
-                                        dashboard </h4>
-                                </template>
-                                <template #content>
-                                    <p class="m-0 text-sm">
-                                        Elevating e-commerce with seamless checkout redesign for enhanced user
-                                        experience
-                                    </p>
-                                </template>
-                                <template #footer>
-                                    <Button class="p-0 text-blue-600 text-sm" link label="View project"/>
-                                </template>
-                            </Card>
-                        </div>
-
-                        <div class="md:col-6 col-12">
-                            <Card
-                                :pt="{
-                            content: { class: 'p-0 pt-1 ' },
-                            footer: { class: 'pt-3' },
-                            }"
-
-                            >
-                                <template #header>
-                                </template>
-                                <template #title>
-                                    <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
-                                        dashboard </h4>
-                                </template>
-                                <template #content>
-                                    <p class="m-0 text-sm">
-                                        Elevating e-commerce with seamless checkout redesign for enhanced user
-                                        experience
-                                    </p>
-                                </template>
-                                <template #footer>
-                                    <Button class="p-0 text-blue-600 text-sm" link label="View project"/>
-                                </template>
-                            </Card>
-                        </div>
-
-                        <div class="md:col-6 col-12">
-                            <Card
-                                :pt="{
-                            content: { class: 'p-0 pt-1 ' },
-                            footer: { class: 'pt-3' },
-                            }"
-
-                            >
-                                <template #header>
-                                </template>
-                                <template #title>
-                                    <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
-                                        dashboard </h4>
-                                </template>
-                                <template #content>
-                                    <p class="m-0 text-sm">
-                                        Elevating e-commerce with seamless checkout redesign for enhanced user
-                                        experience
-                                    </p>
-                                </template>
-                                <template #footer>
-                                    <Button class="p-0 text-blue-600 text-sm" link label="View project"/>
-                                </template>
-                            </Card>
-                        </div>
-
-                        <div class="md:col-6 col-12">
-                            <Card
-                                :pt="{
-                            content: { class: 'p-0 pt-1 ' },
-                            footer: { class: 'pt-3' },
-                            }"
-
-                            >
-                                <template #header>
-                                </template>
-                                <template #title>
-                                    <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
-                                        dashboard </h4>
-                                </template>
-                                <template #content>
-                                    <p class="m-0 text-sm">
-                                        Elevating e-commerce with seamless checkout redesign for enhanced user
-                                        experience
-                                    </p>
-                                </template>
-                                <template #footer>
-                                    <Button class="p-0 text-blue-600 text-sm" link label="View project"/>
-                                </template>
-                            </Card>
-                        </div>
-
-                        <div class="md:col-6 col-12">
-                            <Card
-                                :pt="{
-                            content: { class: 'p-0 pt-1 ' },
-                            footer: { class: 'pt-3' },
-                            }"
-
-                            >
-                                <template #header>
                                 </template>
                                 <template #title>
                                     <h4 class="my-1 text-lg text-black-alpha-90">Creating a public health
@@ -392,6 +393,7 @@ import Button from "primevue/button";
 import Chip from 'primevue/chip';
 import Rating from 'primevue/rating';
 import Card from 'primevue/card';
+import Divider from 'primevue/divider';
 
 
 import {Icon} from "@iconify/vue";
@@ -466,5 +468,21 @@ const skills = ref({
         }
     ]
 })
+const hover = ref({})
+
+const hoverOnWorkExperienceCard = (index) => {
+    if (hover.value[index] !== undefined) {
+        hover.value[index] = !hover.value[index];
+    }
+    hover.value = {[index]: true, ...hover.value};
+}
 
 </script>
+
+<style scoped>
+img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+</style>
