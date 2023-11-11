@@ -1,5 +1,5 @@
 <template>
-    <div class="flex gap-6 px-2 md:gap-0 align-items-center justify-content-between">
+    <div class=" layout-topbar flex gap-6 px-2 md:gap-0 align-items-center justify-content-between">
         <svg width="237" height="52" viewBox="0 0 237 52" fill="none" xmlns="http://www.w3.org/2000/svg"
             xmlns:xlink="http://www.w3.org/1999/xlink">
             <rect x="0.5" y="0.5" width="236" height="51" rx="11.5" fill="#F9F7F5" />
@@ -33,7 +33,7 @@
 
             <button @click="toggle($event, 'profileMenu')" aria-haspopup="true" aria-controls="language_menu"
                 class="flex gap-2 p-link align-items-center">
-                <Avatar icon="pi pi-user" size="normal" shape="circle" />
+                <Avatar image="./images/profile-image.png"  size="normal" shape="circle" />
                 <span class="hidden text-sm md:block ">Beth Amarachi</span>
                 <Icon class="hidden md:block"  icon="fluent:caret-down-24-filled" color="#000000" width="14" height="14" />
             </button>
@@ -110,7 +110,18 @@ const changeLanguage = (language) => {
 </script>
 
 <style lang="css" scoped>
-:deep(.p-menuitem-content) {
-    padding: 5px !important;
+.layout-topbar {
+    position: fixed;
+    height: 5rem;
+    z-index: 997;
+    left: 0;
+    top: 0;
+    width: 100%;
+    padding: 0 2rem;
+    background-color: var(--surface-card);
+    transition: left .2s;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 3px 5px #00000005,0 0 2px #0000000d,0 1px 4px #00000014;
 }
 </style>
