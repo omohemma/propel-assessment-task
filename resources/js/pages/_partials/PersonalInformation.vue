@@ -1,24 +1,25 @@
 <template>
-    <section class="my-8 px-3">
+    <section class="sm:my-8 my-4 px-3">
         <ProfileSectionHeader :title="'Personal Info'">
             <template #button>
-                <Button class="bg-black-alpha-80" size="small" label="Edit" rounded>
+                <Button class="bg-black-500 h-2rem" size="small" label="Edit" rounded>
                     <template #icon>
                         <Icon icon="fluent:edit-24-regular" class="mr-1" width="20" height="20"/>
                     </template>
                 </Button>
             </template>
         </ProfileSectionHeader>
+        
         <div class="grid mt-3">
             <div class="md:col-4 sm:col-6 col-12">
-                <h5 class="text-base md:mb-2 md:mt-4 my-1">Full name</h5>
-                <p class="m-0 line-height-3">
+                <h5 class="text-base md:mb-2 md:mt-4 my-1 text-500">Full name</h5>
+                <p class="m-0 line-height-3 text-400">
                     Beth Amarachi</p>
             </div>
 
             <div class="md:col-4 sm:col-6 col-12">
-                <h5 class="text-base md:mb-2 md:mt-4 my-1">Email Address</h5>
-                <p class="m-0 line-height-3">
+                <h5 class="text-base md:mb-2 md:mt-4 my-1 text-500">Email Address</h5>
+                <p class="m-0 line-height-3 text-400">
                     bethamarachi@gmail.com</p>
             </div>
 
@@ -26,8 +27,8 @@
             </div>
 
             <div class="md:col-4 sm:col-6 col-12">
-                <h5 class="text-base md:mb-2 md:mt-4 my-1">Gender</h5>
-                <p class="m-0 line-height-3">
+                <h5 class="text-base md:mb-2 md:mt-4 my-1 text-500">Gender</h5>
+                <p class="m-0 line-height-3 text-400">
                     Female</p>
                 <div class="inline-flex align-items-center">
                     <Icon icon="fluent:lock-closed-24-regular" class="mr-1" width="20" height="20"/>
@@ -37,8 +38,8 @@
             </div>
 
             <div class="md:col-4 sm:col-6 col-12">
-                <h5 class="text-base md:mb-2 md:mt-4 my-1">Country of Residence</h5>
-                <p class="m-0 line-height-3 flex align-items-center gap-2">
+                <h5 class="text-base md:mb-2 md:mt-4 my-1 text-500">Country of Residence</h5>
+                <p class="m-0 line-height-3 text-400 flex align-items-center gap-2">
                     Nigeria
                     <svg width="18" height="18" viewBox="0 0 18 18" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <g clip-path="url(#clip0_0_2390)">
@@ -67,14 +68,14 @@
             </div>
 
             <div class="md:col-4 sm:col-6 col-12">
-                <h5 class="text-base md:mb-2 md:mt-4 my-1">Phone Number</h5>
-                <p class="m-0 line-height-3">+234-9283924450</p>
+                <h5 class="text-base md:mb-2 md:mt-4 my-1 text-500">Phone Number</h5>
+                <p class="m-0 line-height-3 text-400">+234-9283924450</p>
             </div>
         </div>
 
         <div class="md:w-10 w-full">
             <h5 class="text-base md:mb-2 md:mt-4  my-1">About me</h5>
-            <p class="m-0 line-height-3">I am a DevOps and Big Data engineer with 4 years experience and
+            <p class="m-0 line-height-3 text-400">I am a DevOps and Big Data engineer with 4 years experience and
                 in-depth knowledge of R, Python, PowerBI and Tableau. I have an Msc. in Statistics and a
                 big part of my career has been spent working at Jumia Nigeria, working as a BI Analyst
                 and later a Commercial Planning Analyst.</p>

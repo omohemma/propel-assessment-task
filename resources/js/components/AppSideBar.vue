@@ -1,157 +1,52 @@
 <template>
-    <div class="card flex flex-column justify-content-center  h-screen fixed w-16rem">
-
-        <div class="flex flex-column h-full border-1">
-            <div class="flex align-items-center justify-content-between px-4 pt-3 flex-shrink-0">
-
-                <span>
-                            <Button class="h-2rem w-2rem" icon="pi pi-times" outlined rounded type="button"
-                            >
-
-                            </Button>
-                </span>
-            </div>
-            <div class="overflow-y-auto mb-6">
-                <ul class="list-none p-3 m-0">
-                    <li>
-                        <ul class="list-none p-0 m-0 overflow-hidden">
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-home mr-2"></i>
-                                    <span class="font-medium">Dashboard</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-bookmark mr-2"></i>
-                                    <span class="font-medium">Bookmarks</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a
-
-                                    class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
-                                >
-                                    <i class="pi pi-chart-line mr-2"></i>
-                                    <span class="font-medium">Reports</span>
-                                    <i class="pi pi-chevron-down ml-auto"></i>
-                                </a>
-                                <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
-                                    <li>
-                                        <a
-
-
-                                            class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple"
-                                        >
-                                            <i class="pi pi-chart-line mr-2"></i>
-                                            <span class="font-medium">Revenue</span>
-                                            <i class="pi pi-chevron-down ml-auto"></i>
-                                        </a>
-                                        <ul class="list-none py-0 pl-3 pr-0 m-0 hidden overflow-y-hidden transition-all transition-duration-400 transition-ease-in-out">
-                                            <li>
-                                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                                    <i class="pi pi-table mr-2"></i>
-                                                    <span class="font-medium">View</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                                    <i class="pi pi-search mr-2"></i>
-                                                    <span class="font-medium">Search</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                            <i class="pi pi-chart-line mr-2"></i>
-                                            <span class="font-medium">Expenses</span>
-                                        </a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-users mr-2"></i>
-                                    <span class="font-medium">Team</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-calendar mr-2"></i>
-                                    <span class="font-medium">Calendar</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li><li>
-                            <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                <i class="pi pi-cog mr-2"></i>
-                                <span class="font-medium">Settings</span>
-                            </a>
-                        </li><li>
-                            <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                <i class="pi pi-cog mr-2"></i>
-                                <span class="font-medium">Settings</span>
-                            </a>
-                        </li>
-
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-                            <li>
-                                <a class="flex align-items-center cursor-pointer p-3 border-round text-700 hover:surface-100 transition-duration-150 transition-colors p-ripple">
-                                    <i class="pi pi-cog mr-2"></i>
-                                    <span class="font-medium">Settings</span>
-                                </a>
-                            </li>
-
-
-                        </ul>
-                    </li>
-                </ul>
-
-            </div>
-
-        </div>
-
-        <Button icon="pi pi-bars" @click="visible = true"/>
+    <div v-if="width > 1024" class="flex flex-column justify-content-between ">
+        <Navigation :links="links" />
     </div>
+    <Sidebar v-else v-model:visible="visible" @outside="$emit('toggleSidebar', false)" class="w-18rem flex flex-column justify-content-between " :pt="{
+        header: {
+            class: 'bg-orange-50'
+        },
+        content: {
+            class: 'bg-orange-50'
+        }
+    }">
+        <template #container>
+            <div class="flex flex-column h-full bg-orange-50">
+                <div class="flex align-items-center justify-content-end px-4 pt-3 flex-shrink-0">
+                    <span>
+                        <Icon @click="$emit('toggleSidebar', false)" icon="ic:outline-cancel"
+                            class="text-400 cursor-pointer" width="28" height="28" />
+                    </span>
+                </div>
+                <Navigation :links="links" />
+            </div>
+        </template>
+    </Sidebar>
 </template>
 
 <script setup>
-import {ref} from "vue";
-import Button from "primevue/button";
+import { ref } from "vue";
 
-const visible = ref(true);
+import Navigation from "./Navigation.vue";
+import Sidebar from 'primevue/sidebar';
+import Button from "primevue/button";
+import { Icon } from "@iconify/vue";
+
+import { useWindowSize } from '@vueuse/core'
+const { width } = useWindowSize()
+
+defineProps({
+    visible: Boolean
+})
+
+const links = ref([
+    { path: '/', label: 'Home', icon: 'fluent:home-24-regular' },
+    { path: '/', label: 'Jobs', icon: 'fluent:toolbox-24-regular' },
+    { path: '/', label: 'Financial Services', icon: 'fluent:building-bank-24-regular' },
+    { path: '/', label: 'Discount & Deals', icon: 'fluent:leaf-three-24-regular' },
+    { path: '/', label: 'Opportunities', icon: 'fluent:lightbulb-filament-24-regular' },
+    { path: '/', label: 'Refer a Friend', icon: 'fluent:person-add-24-regular' },
+    { path: '/', label: 'Community Wall', icon: 'fluent:people-community-24-regular' },
+])
+
 </script>

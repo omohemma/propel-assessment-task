@@ -1,7 +1,7 @@
 <template>
     <div class="layout-wrapper">
-        <AppHeader />
-        <div class="layout-sidebar"></div>
+        <AppHeader :visible="visible" @toggle-sidebar="visible = !visible" class="layout-topbar" />
+        <AppSideBar :visible="visible" @toggle-sidebar="visible = !visible" class="layout-sidebar" />
         <div class="layout-main-container">
             <RouterView />
         </div>
@@ -10,6 +10,10 @@
 
 <script setup>
 import AppHeader from '../components/AppHeader.vue';
+import AppSideBar from '../components/AppSideBar.vue';
+import {ref} from 'vue';
+
+const visible = ref(false);
 
 </script>
 
@@ -20,31 +24,31 @@ import AppHeader from '../components/AppHeader.vue';
 
 .layout-topbar {
     position: fixed;
-    height: 5rem;
+    height: 4.5rem;
+    border-bottom: 1px solid var(--orange-100);
+    background: var(--surface-section);
     z-index: 997;
     left: 0;
     top: 0;
     width: 100%;
     padding: 0 2rem;
-    background-color: var(--surface-card);
     transition: left .2s;
     display: flex;
     align-items: center;
-    box-shadow: 0 3px 5px #00000005, 0 0 2px #0000000d, 0 1px 4px #00000014;
 }
 
 .layout-sidebar {
     position: fixed;
     width: 260px;
-    height: calc(100vh);
+    height: calc(100vh - 4.5rem);
     z-index: 999;
     overflow-y: auto;
     -webkit-user-select: none;
     user-select: none;
-    top: 5rem;
+    top:4.5rem;
+    left: 0;
     transition: transform .2s, left .2s;
     background-color: var(--surface-overlay);
-    padding: .5rem 1.5rem;
     background: var(--orange-50);
 }
 
@@ -53,11 +57,11 @@ import AppHeader from '../components/AppHeader.vue';
     flex-direction: column;
     min-height: 100vh;
     justify-content: space-between;
-    padding: 7rem 2rem 2rem 4rem;
+    padding: 7rem 0rem 2rem 0rem;
     transition: margin-left .2s;
 }
 
-@media (min-width: 992px) {
+@media (min-width: 1440px) {
     .layout-main-container {
         margin-left: 260px;
     }

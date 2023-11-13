@@ -13,6 +13,7 @@
         "vite": "^4.5.0"
     },
     "dependencies": {
+        "@vueuse/core": "^10.6.1",
         "primeflex": "^3.3.1",
         "primevue": "^3.39.0",
         "vue": "^3.2.36",
